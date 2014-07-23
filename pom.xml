@@ -10,7 +10,7 @@
     <packaging>pom</packaging>
     
     <modules>
-        <module>maven2_plugins/plugins</module>
+        <module>maven2_plugins</module>
         <module>lojix/base</module>
         <module>lojix/lojix</module>
         <module>junit_toolkit</module>
