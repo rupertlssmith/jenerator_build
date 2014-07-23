@@ -1,0 +1,5 @@
+#!/bin/sh
+ln -s ../lojix lojix
+ln -s ../junit_toolkit junit_toolkit
+ln -s ../maven2_plugins maven2_plugins
+ln -s ../jenerator jenerator
