@@ -1,0 +1,8 @@
+target
+*.iml
+*.iws
+*.ipr
+lojix
+junit_toolkit
+maven2_plugins
+jenerator
