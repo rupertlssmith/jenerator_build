@@ -1,6 +1,0 @@
-<project>
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>jwsdp</groupId>
-  <artifactId>jaxrpc-api</artifactId>
-  <version>jwsdp.2.0</version>
-</project>

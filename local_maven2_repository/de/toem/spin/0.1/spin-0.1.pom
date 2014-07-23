@@ -1,8 +1,0 @@
-<project>
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>de.toem</groupId>
-  <artifactId>spin</artifactId>
-  <version>0.1</version>
-  <dependencies>
-  </dependencies>
-</project>
