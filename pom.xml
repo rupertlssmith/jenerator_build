@@ -1,0 +1,38 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    
+    <groupId>com.thesett</groupId>
+    <artifactId>catalogue_build</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    
+    <packaging>pom</packaging>
+    
+    <modules>
+        <module>maven2_plugins/plugins</module>
+        <module>lojix/base</module>
+        <module>lojix/lojix</module>
+        <module>junit_toolkit</module>
+        <module>jenerator</module>
+    </modules>
+
+    <profiles>
+        <!-- Build profile to build quickly without running tests. -->
+        <profile>
+            <id>skip</id>
+            <properties>
+                <maven.test.skip>true</maven.test.skip>
+            </properties>
+        </profile>
+
+        <!-- Build profile to ignore test failures. -->
+        <profile>
+            <id>ignore</id>
+            <properties>
+                <maven.test.failure.ignore>true</maven.test.failure.ignore>
+                <maven.test.error.ignore>true</maven.test.error.ignore>
+            </properties>
+        </profile>
+    </profiles>    
+</project>
