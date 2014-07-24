@@ -1,5 +1,2 @@
-#!/bin/sh
-git clone https://github.com/rupertlssmith/maven2_plugins.git
-git clone https://github.com/rupertlssmith/junit_toolkit.git
-git clone https://github.com/rupertlssmith/lojix.git
-git clone https://github.com/rupertlssmith/jenerator.git
+#!/bin/bash
+for i in `cat modules`; do git clone https://github.com/rupertlssmith/$i.git; done

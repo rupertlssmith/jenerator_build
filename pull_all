@@ -1,0 +1,3 @@
+#!/bin/bash
+git pull
+for i in `cat modules`; do pushd $i; git pull; popd; done
