@@ -1,0 +1,3 @@
+#!/bin/bash
+git status
+for i in `cat modules`; do pushd $i; git status; popd; done
