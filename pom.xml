@@ -13,6 +13,7 @@
         <module>maven2_plugins</module>
         <module>lojix/base</module>
         <module>lojix/lojix</module>
+        <module>lojix/debugger</module>
         <module>junit_toolkit</module>
         <module>jenerator</module>
     </modules>
