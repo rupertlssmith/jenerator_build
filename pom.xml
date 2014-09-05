@@ -5,7 +5,7 @@
     
     <groupId>com.thesett</groupId>
     <artifactId>jenerator_top_build</artifactId>
-    <version>0.8.4-SNAPSHOT</version><!-- jenerator_top_build.version -->
+    <version>0.8.4</version><!-- jenerator_top_build.version -->
     
     <packaging>pom</packaging>
     
