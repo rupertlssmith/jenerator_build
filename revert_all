@@ -1,6 +1,6 @@
 #!/bin/bash
 echo ==== . ====
 echo
-git status
+git checkout .
 echo
 for i in `cat modules`; do pushd $i >> /dev/null; echo ==== $i ====; echo; git checkout .; echo; popd >> /dev/null; done
