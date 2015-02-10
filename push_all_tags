@@ -1,0 +1,3 @@
+#!/bin/bash
+git push --tags
+for i in `cat modules`; do pushd $i; git push --tags; popd; done
