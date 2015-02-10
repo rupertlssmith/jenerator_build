@@ -1,0 +1,15 @@
+#!/bin/bash
+
+if [ -z "$1" ] ; then 
+   echo Tag must be specified.
+   exit
+fi
+
+if [ -z "$2" ] ; then 
+   echo Tag commit message must be specified.
+   exit
+fi
+
+git tag -a "$1" -m "$2"
+
+for i in `cat modules`; do pushd $i; git tag -a "$1" -m "$2"; popd; done
