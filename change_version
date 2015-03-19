@@ -14,7 +14,7 @@ CV=$1
 echo Current version is $CV
 echo New version is $2
 
-SEDCMD="s/<version>$CV<\/version><!--\(.*\)\.version-->/<version>$2<\/version><!--\1.version-->/"
+SEDCMD="s/<\(.*\)version>$CV<\/\(.*\)version><!--\(.*\)\.version-->/<\1version>$2<\/\2version><!--\3.version-->/"
 find -L . -name 'pom.xml' | xargs sed -i $SEDCMD
 
 CVBASE=`cat lojix/base/current_version`
